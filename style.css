@@ -74,7 +74,7 @@ nav a:hover {
   padding: 80px 20px;
   color: #234;
   background: linear-gradient(rgba(230,250,245,0.8), rgba(215,240,255,0.8)),
-              url("images/bg-hero-health.jpg") center/cover no-repeat;
+              url("bg-hero-health.jpg") center/cover no-repeat;
   background-attachment: fixed;
 }
 
