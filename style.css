@@ -1,0 +1,371 @@
+/* ==== RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(180deg, rgba(230,230,250,0.9), rgba(200,240,220,0.9)),
+              url("images/bg-soft-health.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333333;
+}
+
+/* ==== TOPBAR ==== */
+.topbar {
+  background-color: #3c9f8f;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ==== HEADER ==== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(227, 240, 255, 0.95);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1b6f63;
+}
+.brand span {
+  color: #3c9f8f;
+}
+
+nav {
+  background: linear-gradient(270deg, #E6FFF7, #D7F3FF, #E6FFF7);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+nav a {
+  color: #1f6f65;
+  text-decoration: none;
+  margin: 0 0.8rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==== HERO SECTION ==== */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  color: #234;
+  background: linear-gradient(rgba(230,250,245,0.8), rgba(215,240,255,0.8)),
+              url("images/bg-hero-health.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.hero-title {
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  font-size: 2.6rem;
+  background: linear-gradient(to right, #1b6f63, #3c9f8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+.hero-sub {
+  margin: 0.5rem 0 1rem;
+  color: #2f5b57;
+  font-size: 0.98rem;
+}
+
+.hero-tagline {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #1b6f63;
+}
+
+.cta {
+  background-color: #3c9f8f;
+  color: white;
+  padding: 0.8rem 1.7rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.cta:hover {
+  background-color: #328475;
+}
+
+.hero-image img {
+  border-radius: 18px;
+  width: 310px;
+  height: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+.wave {
+  margin-top: 40px;
+}
+
+/* ==== GALLERY ==== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: rgba(230, 250, 245, 0.95);
+}
+
+.card {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card-caption {
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  color: #2f4f4f;
+}
+
+/* ==== MAIN CONTENT WRAPPER ==== */
+#main-content {
+  background: linear-gradient(rgba(230, 250, 245, 0.9), rgba(215, 240, 255, 0.9)),
+              url("images/bg-main-health.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 40px 15px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ==== CONTENT SECTIONS ==== */
+.content-section {
+  background: linear-gradient(to bottom right, rgba(245,255,251,0.95), rgba(225,240,255,0.95));
+  color: #333333;
+  padding: 0;
+  margin: 20px 0;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 80, 60, 0.25);
+}
+
+.collapsible-header {
+  background: linear-gradient(90deg, #3c9f8f, #5fb8a7);
+  color: white;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.collapsible-content.open {
+  padding: 1.5rem;
+}
+
+.collapsible-content p,
+.collapsible-content ul {
+  margin-bottom: 0.7rem;
+}
+
+.collapsible-content ul {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+.arrow.rotate {
+  transform: rotate(90deg);
+}
+
+.note-box {
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  border-left: 4px solid #3c9f8f;
+}
+
+/* ==== ISSUES GRID ==== */
+.issues-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.issues-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-size: 0.9rem;
+}
+
+.issues-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* ==== HEALTH TIPS GRID ==== */
+.health-tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tip-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-size: 0.9rem;
+}
+
+.tip-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* ==== CREATOR SECTION ==== */
+.creator-content {
+  padding-bottom: 1.5rem;
+}
+
+.creator-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.creator-photo img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 4px solid #3c9f8f;
+}
+
+.creator-text h3 {
+  margin-bottom: 0.4rem;
+  color: #1b6f63;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: #1b6f63;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  nav {
+    margin-top: 0.4rem;
+  }
+  .hero-inner {
+    flex-direction: column;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-title {
+    text-align: center;
+  }
+  .creator-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
